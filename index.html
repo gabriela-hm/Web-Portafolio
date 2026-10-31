@@ -13,48 +13,10 @@
 </head>
 <body>
     <!-- video de fondo -->
-        <video autoplay muted loop playsinline aria-hidden="true" id="video-fondo">
-            <source src="" type="video/mp4">
-        </video>
-    <div class="cover-inner">
-        <header class="cover-header">
-            <div class="brand-tag" >
-                <svg xmlns="http://w3.org" viewBox="0 0 9 6" width="24" height="16" style="vertical-align: middle; box-shadow: 0 1px 3px rgba(0,0,0,0.2); border-radius: 2px;">
-                    <rect width="9" height="6" fill="#CE1126"/>
-                    <rect width="9" height="4.5" fill="#003893"/>
-                    <rect width="9" height="3" fill="#FCD116"/>
-                </svg>
-                <span>Made in Colombia</span>
-            </div>
-            <div class="tag-badges">
-                <span class="badge-pill">HTML</span>
-                <span class="badge-pill">CSS</span>
-                <span class="badge-pill">JS</span>
-                <span class="badge-pill">JAVA</span>
-            </div>
-        </header>
-    </div>
-    
+        <img src="img/nubes_animadas_10s.gif" alt="fondo" id="video-fondo">
 
     <!-- pagina principal -->
-    <main class="layout">
-        <!-- texto middle -->
-        <div class="cover-main-body">
-            <h1  class="cover-title">PORTAFOLIO DE <span>DESARROLLO DE SOFTWARE</span></h1>
-            <div class="divider-bar"></div>
-            <div class="author-name">Jeimy Gabriela Hernández Merchán</div>
-            <p class="author-subtitle"> Desarroladora Junior Full-Stack Java </p>
-            <p class="cover-description">
-                Bienvenid@ a mi Portafolio Digital. Aquí encontrarás una selección de mis proyectos tanto en Frontend como en Backend, 
-                desarrollados con tecnologías modernas, enfoque en buenas prácticas de arquitectura de software e interfaces limpias e interactivas.
-            </p>
-            <!-- console log -->
-            <div class="comic-code-bubble">
-                <div class="bubble-dot"></div>
-                <code class="bubble-code">console.log("¡Hola! 👋 Gracias por revisar mi trabajo")</code>
-            </div>
-        </div>
-
+    <main class="viewport-layout">
         <!-- spine lateral -->
         <div class="book-stage" id="book-container">
             <article class="book-card" id="book-closed" title="Haz clic para abrir el portafolio">
@@ -67,7 +29,7 @@
                 <!-- diseño de ondas superior-->
                 <div aria-hidden="true" class="page-edges"></div> <!--bordes-->
                 <div aria-hidden="true" class="cover-wave-top">
-                    <svg fill="none" preserveAspectRatio="none" viewbox=""0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+                    <svg fill="none" preserveAspectRatio="none" viewbox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
                         <!-- tonos azules -->
                         <path d="M0,0 L600,0 L600,85 C510,135 435,70 340,110 C250,150 160,185 0,160 Z" fill="#bae6fd" fill-opacity="0.8"></path> 
                         <path d="M0,0 L440,0 C380,65 310,105 240,118 C155,135 90,122 0,160 Z" fill="#38bdf8" fill-opacity="0.88"></path>
@@ -85,20 +47,58 @@
                     </svg>
 
                 </div>
-                <!-- footer -->
-                <footer class="cover-footer">
-                    <button aria-label="Abrir el libro" class="btn-comic-action" type="button">
-                        <div class="action-icon-disc">
-                            <svg fill="one" stroke="currentColor" viewbox="0 0 24 24">
-                                <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path>
+
+                <div class="cover-inner">
+                    <header class="cover-header">
+                        <div class="brand-tag" >
+                            <svg xmlns="http://w3.org" viewBox="0 0 9 6" width="24" height="16" style="vertical-align: middle; box-shadow: 0 1px 3px rgba(0,0,0,0.2); border-radius: 2px;">
+                                <rect width="9" height="6" fill="#CE1126"/>
+                                <rect width="9" height="4.5" fill="#003893"/>
+                                <rect width="9" height="3" fill="#FCD116"/>
                             </svg>
+                            <span>Made in Colombia </span>
                         </div>
-                        <div>
-                            <span class="action-label-main">Haz clic en la portada para abrir el libro</span>
-                            <span class="action-label-sub">Click para abrir | Explorar capítulos </span>
+                        <div class="tag-badges">
+                            <span class="badge-pill">HTML</span>
+                            <span class="badge-pill">CSS</span>
+                            <span class="badge-pill">JS</span>
+                            <span class="badge-pill">JAVA</span>
                         </div>
-                    </button>
-                </footer>          
+                    </header>
+                
+
+
+                    <!-- texto middle -->
+                    <div class="cover-main-body">
+                        <h1  class="cover-title">PORTAFOLIO DE <span>DESARROLLO DE SOFTWARE</span></h1>
+                        <div class="divider-bar"></div>
+                        <div class="author-name">Jeimy Gabriela Hernández Merchán</div>
+                        <p class="author-subtitle"> Desarroladora Junior Full-Stack Java </p>
+                        <p class="cover-description">
+                        Bienvenid@ a mi Portafolio Digital. Aquí encontrarás una selección de mis proyectos tanto en Frontend como en Backend, 
+                        desarrollados con tecnologías modernas, enfoque en buenas prácticas de arquitectura de software e interfaces limpias e interactivas.
+                         </p>
+                        <!-- console log -->
+                        <div class="comic-code-bubble">
+                            <div class="bubble-dot"></div>
+                            <code class="bubble-code">console.log("¡Hola! 👋 Gracias por revisar mi trabajo")</code>
+                        </div>
+                    </div>
+                    <!-- footer -->
+                    <footer class="cover-footer">
+                        <button aria-label="Abrir el libro" class="btn-comic-action" type="button">
+                            <div class="action-icon-disc">
+                             <svg fill="one" stroke="currentColor" viewbox="0 0 24 24">
+                                    <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="action-label-main">Haz clic en la portada para abrir el libro</span>
+                                <span class="action-label-sub">Click para abrir | Explorar capítulos </span>
+                            </div>
+                        </button>
+                    </footer>  
+                </div>        
             </article>
         </div>
 
