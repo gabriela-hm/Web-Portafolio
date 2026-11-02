@@ -27,23 +27,23 @@
                 </aside>
 
                 <!-- diseño de ondas superior-->
-                <div aria-hidden="true" class="page-edges"></div> <!--bordes-->
+                <div aria-hidden="true" class="page-edges"></div> 
                 <div aria-hidden="true" class="cover-wave-top">
                     <svg fill="none" preserveAspectRatio="none" viewbox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
                         <!-- tonos azules -->
                         <path d="M0,0 L600,0 L600,85 C510,135 435,70 340,110 C250,150 160,185 0,160 Z" fill="#bae6fd" fill-opacity="0.8"></path> 
-                        <path d="M0,0 L440,0 C380,65 310,105 240,118 C155,135 90,122 0,160 Z" fill="#38bdf8" fill-opacity="0.88"></path>
-                        <path d="M0,0 L360,0 C310,50 250,82 185,92 C115,104 60,92 0,128 Z" fill="#0284c7"></path>
-                        <path d="M0,0 L270,0 C220,38 175,62 125,68 C70,72 30,62 0,88 Z" fill="#0369a1"></path>
+                        <path d="M0,0 L440,0 C380,65 310,105 240,118 C155,135 90,122 0,160 Z" fill="#61C4FA" fill-opacity="0.88"></path>
+                        <path d="M0,0 L360,0 C310,50 250,82 185,92 C115,104 60,92 0,128 Z" fill="#0686CB"></path>
+                        <path d="M0,0 L270,0 C220,38 175,62 125,68 C70,72 30,62 0,88 Z" fill="#05699E"></path>
                     </svg>
                 </div>
                 <!-- diseño de ondas inferior-->
                 <div aria-hidden="true" class="cover-wave-bottom">
                     <svg fill="none" preserveaspectratio="none" viewbox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
                         <path d="M170,260 C255,198 365,185 448,138 C518,98 560,68 600,58 L600,260 Z" fill="#bae6fd" fill-opacity="0.8"></path>
-                        <path d="M210,260 C295,202 380,198 458,162 C518,132 565,112 600,102 L600,260 Z" fill="#38bdf8" fill-opacity="0.88"></path>
-                        <path d="M255,260 C335,208 405,208 472,182 C532,158 570,142 600,138 L600,260 Z" fill="#0284c7"></path>
-                        <path d="M305,260 C385,212 445,222 508,202 C552,188 580,178 600,174 L600,260 Z" fill="#0369a1"></path>
+                        <path d="M210,260 C295,202 380,198 458,162 C518,132 565,112 600,102 L600,260 Z" fill="#61C4FA" fill-opacity="0.88"></path>
+                        <path d="M255,260 C335,208 405,208 472,182 C532,158 570,142 600,138 L600,260 Z" fill="#0686CB"></path>
+                        <path d="M305,260 C385,212 445,222 508,202 C552,188 580,178 600,174 L600,260 Z" fill="#05699E"></path>
                     </svg>
 
                 </div>
@@ -97,14 +97,60 @@
                                 <span class="action-label-sub">Click para abrir | Explorar capítulos </span>
                             </div>
                         </button>
+                        <div class="pages-pill">PÁGINAS 01-07</div>
                     </footer>  
                 </div>        
             </article>
+
+            <!-- HOJA 2 TABLA DE CONTENIDO -->
+             <section aria-label="Contenido interior del libro" class="book-spread" id="book-open">
+                <!-- textura-papel -->
+                 <div aria-hidden="true" class="spread-crease"></div>
+                 <div aria-hidden="true" class="spread-right-edge"></div>
+                 <div aria-hidden="true" class="spread-texture"></div>
+
+                 <!-- interior header -->
+                  <header class="spread-header">
+                    <div class="spread-nav-group">
+                        <button class="btn-close-book" id="btn-close-book" type="button">
+                            <svg fill="none" height="14" stroke="currentColor" viexbox="0 0 24 24" width="14">
+                                <path d="M11 19l-7-7 7-7m8 14l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                            </svg>
+                            <span>Cerrar Portada</span>
+                        </button>
+                        <div class="header-sep"></div>
+                        <span class="spread-folio-title" id="spread-title">TABLA DE CONTENIDOS</span>
+                    </div>
+                    <div class="spread-page-counter" id="page-counter-badge">
+                        01 / 07
+                    </div>
+                  </header>
+
+                  <div class="spread-body" id="spread-body">
+                    <!-- lista de contenidos -->
+                    <div class="panel-header">
+                        <div>
+                            <h2 class="panel-title">ÍNDICE </h2>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--color-slate-600); margin-bottom: 1.4rem; line-height: 1.5;">
+                        Navega libremente por casa sección técnica del portafolio. Haz clic sobre cada título para saltar al capítulo correspondiente. 
+                    </p>
+                    <nav aria-label="Tabla de Navegación">
+                        <button  class="toc-item-btn" onclick="goToSpread('about')" type="button">
+                            <div></div>
+                        </button>
+                    </nav>
+                  </div>
+
+
+             </section>
+
         </div>
 
 
 
-        <!-- HOJA 2 TABLA DE CONTENIDO -->
+        
 
 
 

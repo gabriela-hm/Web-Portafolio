@@ -20,7 +20,7 @@
     --color-blue-primary: #0ea5e9;
     --color-blue-deep: #0284c7;
     --color-blue-navy: #0369a1;
-    --color-blue-midnight: #0c4a6e;
+    --color-blue-midnight: #044B72;
     --color-emerald: #10b981;
 
 
@@ -29,7 +29,7 @@
 
     --shadow-book-closed: 0 25px 65px -80px rgba(15, 14, 13, 0.75), 0 0 45px rgba(14, 165, 233, 0.18), -16px 0 30px rgba(0, 0, 0, 0.55); /*sombra libro*/
     --shadow-spine: inset -8px 0 16px -4px rgba(29, 34, 50, 0.45), 6px 0 14px -3px rgba(0, 0, 0, 0.35); /*sombra lomo*/
-    --shadow-speech: 0 8px 24px -4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(56, 189, 248, 0.25);
+    --shadow-speech: 0 8px 40px -4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(56, 189, 248, 0.25);
 }
 
 *,
@@ -123,15 +123,15 @@ body {
   left: 0;
   bottom: 0;
   width: 28px;
-  background: linear-gradient(90deg, #d8e2ec 0%, #ffffff 45%, #cfdce8 90%, #9cb3c9 100%);
+  background: linear-gradient(90deg, #d8e2ec 0%, #ffffff 45%, #cfdce8 90%, #9cb3c9 100%); /* cilindro real captando la luz */
   border-right: 1px solid #cbd5e1;
   box-shadow: var(--shadow-spine);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; /* empuja los elementos a los extremos del lomo */
   align-items: center;
   padding: 2.2rem 0;
-  z-index: 40;
+  z-index: 40; /* que el lomo siempre sea visible encima de los adornos de la portada */
 }
 
 .spine-dot {
@@ -143,12 +143,12 @@ body {
 }
 
 .spine-text {
-  font-family: var(--font-mono);
-  font-size: 9.5px;
-  font-weight: 700;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 750;
   color: var(--color-slate-600);
-  letter-spacing: 0.18em;
-  writing-mode: vertical-lr;
+  letter-spacing: 0.20em;
+  writing-mode: vertical-lr; /* cambio de dirección a vertical */
   transform: rotate(180deg);
   text-transform: uppercase;
 }
@@ -159,17 +159,12 @@ body {
   top: 10px;
   bottom: 10px;
   width: 7px;
-  background: repeating-linear-gradient(
-    90deg,
-    #f8fafc 0px,
-    #e2e8f0 1.5px,
-    #cbd5e1 3px
-  );
+  background: repeating-linear-gradient( 90deg, #f8fafc 0px, #e2e8f0 1.5px, #cbd5e1 3px);
   border-radius: 0 4px 4px 0;
   border: 1px solid #cbd5e1;
   border-left: none;
   opacity: 0.9;
-  pointer-events: none;
+  pointer-events:none;
   z-index: 10;
 }
 
@@ -180,7 +175,7 @@ body {
   right: 0;
   pointer-events: none;
   z-index: 15;
-  overflow: hidden;
+  overflow: hidden; /* evita el desbordamiento */
 }
 
 .cover-wave-top {
@@ -208,6 +203,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transform: translateZ(30px);
 }
 
 .cover-header {
@@ -219,7 +215,7 @@ body {
 }
 
 .brand-tag {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -239,7 +235,7 @@ body {
 }
 
 .badge-pill {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 9px;
   font-weight: 700;
   text-transform: uppercase;
@@ -251,7 +247,7 @@ body {
   border: 1px solid var(--color-blue-soft);
 }
 
-.badge-pill.alt {
+.badge-pill.alt{
   background: rgba(255, 255, 255, 0.95);
   color: var(--color-slate-800);
   border: 1px solid var(--color-slate-300);
@@ -267,16 +263,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.category-year {
-  font-family: var(--font-mono);
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: var(--color-blue-primary);
-  letter-spacing: -0.01em;
-  margin-bottom: 0.35rem;
-  text-align: center;
 }
 
 .cover-title {
@@ -313,7 +299,7 @@ body {
 }
 
 .author-subtitle {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--color-blue-navy);
@@ -332,13 +318,13 @@ body {
 }
 .comic-code-bubble {
   position: relative;
-  background: var(--color-code-bg);
-  border: 1px solid rgba(56, 189, 248, 0.4);
+  background: var(--color-blue-tint);
+  border: 1px solid rgba(207, 132, 33, 0.4);
   border-radius: 8px;
   padding: 0.65rem 0.9rem;
   display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: 15px;
   box-shadow: var(--shadow-speech);
   max-width: 100%;
   margin: 0 auto;
@@ -350,17 +336,17 @@ body {
   border-radius: 50%;
   background: var(--color-emerald);
   box-shadow: 0 0 8px rgba(16, 185, 129, 0.7);
-  flex-shrink: 0;
+  flex-shrink: 0; /* le prohibe al elemento encogerse */
 }
 
 .bubble-code {
   font-family: var(--font-sans);
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 600; /* grosor letra */
   color: var(--color-blue-bright);
-  white-space: nowrap;
+  white-space: nowrap; /* prohibe hacer salto de linea */
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; /* si el texto es demasiado largo para el espacio. lo corta y añade puntos suspensivos */
 }
 
 .cover-footer {
@@ -369,7 +355,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* si el espacio a vaba los elementos saltan a la linea siguiente  */
   gap: 1rem;
   padding-top: 0.5rem;
 }
@@ -408,7 +394,7 @@ body {
 .action-icon-disc svg {
   width: 18px;
   height: 18px;
-  stroke-width: 3.2;
+  stroke-width: 3.2; /* grosor del svg */
 }
 
 .action-label-main {
@@ -431,17 +417,17 @@ body {
   margin-top: 2px;
 }
 .pages-pill {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-slate-700);
-  background: rgba(255, 255, 255, 0.95);
+  color: var(--color-blue-midnight);
+  background: var(--color-blue-tint);
   padding: 5px 9px;
   border-radius: 5px;
   border: 1px solid var(--color-slate-300);
-  white-space: nowrap;
+  white-space: nowrap; /* le prohibe al navegadro hacer saltos de linea */
 }
 
 
