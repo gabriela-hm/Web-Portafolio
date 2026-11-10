@@ -440,9 +440,9 @@ body {
 }
 
 .pages-pill {
-  font-family: var(--font-sans);
-  font-size: 0.65rem;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--color-blue-midnight);
@@ -657,9 +657,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 2px solid var(--color-slate-900);
-  padding-bottom: 0.6rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
 }
 
 .panel-subtitle {
@@ -766,6 +764,82 @@ body {
   font-size: 0.85rem;
   color: var(--color-slate-400);
   font-weight: 400;
+}
+
+/* SOBRE MI */
+.comic-box {
+  display: block; 
+  gap: 1.2rem; 
+  align-items: flex-start; 
+  flex-wrap: wrap;
+  
+}
+
+
+.comic-img {
+  width: 150px; 
+  height: 180px; 
+  border-radius: 16px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-shrink: 0; 
+  overflow: hidden;
+  float: left;
+  margin-right: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-photo{
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain;
+}
+
+.me{
+  min-width: 220px;
+}
+
+.me-name{
+  font-size: 1.1rem; 
+  font-weight: 800; 
+  color: var(--color-slate-900); 
+  margin-bottom: 0.3rem;
+}
+
+.me-position{
+  font-family: var(--font-sans); 
+  font-size: 0.75rem; 
+  color: var(--color-blue-navy); 
+  font-weight: 700;
+}
+
+.me-des{
+  font-size: 0.82rem; 
+  color: var(--color-slate-600); 
+  margin-top: 0.5rem; 
+  line-height: 1.5;
+}
+
+.about-content{
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.h4-about-me{
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--color-slate-900);
+  margin-bottom: 0.4rem;
+  font-weight: 800;
+}
+
+.p-about-me{
+  font-size: 0.82rem;
+  color: var(--color-slate-700);
+  line-height: 1.6;
 }
 
 /* 829 */
