@@ -5,4 +5,11 @@ Deploy: [Link del deployment ](https://gabriela-hm.github.io/Web-Portafolio/)
 
 ## Ajustes
 
-1. descripcion indice se corre cuando se abre y cierra
+1. colores, contrastes, accesibilidad
+
+# Sobremi
+
+1. revisar foto y descripcion
+2. completar información
+3. ancho de texto
+4. frase footer

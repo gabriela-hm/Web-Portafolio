@@ -677,6 +677,16 @@ body {
   letter-spacing: -0.025em;
 }
 
+.panel-title::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 4px;
+  margin-top: 6px;
+  border-radius: 10px;
+  background: var(--color-slate-400);
+}
+
 .panel-filetag {
   font-family: var(--font-sans);
   font-size: 0.75rem;
@@ -801,10 +811,11 @@ body {
 }
 
 .me-name{
-  font-size: 1.1rem; 
-  font-weight: 800; 
-  color: var(--color-slate-900); 
-  margin-bottom: 0.3rem;
+  font-size: 1.25rem;
+  font-weight: 850;
+  color: var(--color-slate-900);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
 }
 
 .me-position{
@@ -815,7 +826,8 @@ body {
 }
 
 .me-des{
-  font-size: 0.82rem; 
+  max-width: 650px;
+  font-size: 0.84rem; 
   color: var(--color-slate-600); 
   margin-top: 0.5rem; 
   line-height: 1.5;
@@ -828,6 +840,7 @@ body {
 }
 
 .h4-about-me{
+  
   font-family: var(--font-sans);
   font-size: 0.78rem;
   text-transform: uppercase;
@@ -837,7 +850,8 @@ body {
 }
 
 .p-about-me{
-  font-size: 0.82rem;
+  max-width: 650px;
+  font-size: 0.84rem;
   color: var(--color-slate-700);
   line-height: 1.6;
 }
