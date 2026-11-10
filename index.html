@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://jsdelivr.net" />
+    <script src="app.js" defer></script>
 
 </head>
 <body>
@@ -102,18 +103,16 @@
                 </div>        
             </article>
 
-            <!-- HOJA 2 TABLA DE CONTENIDO -->
-             <section aria-label="Contenido interior del libro" class="book-spread" id="book-open">
-                <!-- textura-papel -->
-                 <div aria-hidden="true" class="spread-crease"></div>
-                 <div aria-hidden="true" class="spread-right-edge"></div>
-                 <div aria-hidden="true" class="spread-texture"></div>
+            
+            <section aria-label="Contenido interior del libro" class="book-spread" id="book-open">
+                <!-- HOJA 2 TABLA DE CONTENIDO -->
+                
 
-                 <!-- interior header -->
-                  <header class="spread-header">
+                <!-- interior header -->
+                <header class="spread-header">
                     <div class="spread-nav-group">
                         <button class="btn-close-book" id="btn-close-book" type="button">
-                            <svg fill="none" height="14" stroke="currentColor" viexbox="0 0 24 24" width="14">
+                            <svg fill="none" height="14" stroke="currentColor" viewBox="0 0 24 24" width="14">
                                 <path d="M11 19l-7-7 7-7m8 14l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
                             </svg>
                             <span>Cerrar Portada</span>
@@ -124,27 +123,123 @@
                     <div class="spread-page-counter" id="page-counter-badge">
                         01 / 07
                     </div>
-                  </header>
+                </header>
 
-                  <div class="spread-body" id="spread-body">
+                <div class="spread-body" id="spread-body">
                     <!-- lista de contenidos -->
-                    <div class="panel-header">
-                        <div>
-                            <h2 class="panel-title">ÍNDICE </h2>
+
+                    <div class="book-panel active" id="panel-toc">
+                        <div class="panel-header">
+                            <div>
+                                <h2 class="panel-title">ÍNDICE </h2>
+                            </div>
                         </div>
+                        <p style="font-size: 0.85rem; color: var(--color-slate-600); margin-bottom: 1.4rem; line-height: 1.5;">
+                            Navega libremente por casa sección técnica del portafolio. Haz clic sobre cada título para saltar al capítulo correspondiente. 
+                        </p>
+                        <nav aria-label="Tabla de Navegación">
+                            <button class="toc-item-btn" onclick="goToSpread('about')" type="button">
+                                <div class="toc-left">
+                                    <span class="toc-index">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cloud-icon">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                        </svg>
+                                        <span class="toc-number">01</span>
+                                    </span>
+                                    <div>
+                                        <h3 class="toc-tittle">Sobre mí</h3>
+                                        <p class="toc-summary">Presentación, formación, habilidades...</p>
+                                    </div>
+                                </div>
+                                <span class="toc-page-num">02 </span>
+                            </button>
+                            <button class="toc-item-btn" onclick="goToSpread('skills')" type="button">
+                                <div class="toc-left">
+                                    <span class="toc-index">
+                                       <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cloud-icon">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                        </svg>
+                                        <span class="toc-number">02</span>
+                                    </span>
+                                    <div>
+                                        <h3 class="toc-tittle">Habilidades y Tecnologías</h3>
+                                        <p class="toc-summary">Java, Spring Boot, JS, CSS, SQL, HTML, Git</p>
+                                    </div>
+                                </div>
+                                <span class="toc-page-num">03</span>
+                            </button>
+                            <button class="toc-item-btn" onclick="goToSpread('frontend1')" type="button">
+                                <div class="toc-left">
+                                    <span class="toc-index">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cloud-icon">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                        </svg>
+                                        <span class="toc-number">03</span>
+                                    </span>
+                                    <div>
+                                        <h3 class="toc-tittle">Proyectos Frontend</h3>
+                                        <p class="toc-summary">2 proyectos interactivos construidos con HTML, CSS Y JS</p>
+                                    </div>
+                                </div>
+                                <span class="toc-page-num">04</span>
+                            </button>
+                            <button class="toc-item-btn" onclick="goToSpread('backend1')" type="button">
+                                <div class="toc-left">
+                                    <span class="toc-index">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cloud-icon">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                        </svg>
+                                        <span class="toc-number">04</span>
+                                    </span>
+                                    <div>
+                                        <h3 class="toc-tittle">Proyectos Backend</h3>
+                                        <p class="toc-summary">2 proyectos de backend construidos con Spring Boot, Auth JWT...</p>
+                                    </div>
+                                </div>
+                                <span class="toc-page-num">05</span>
+                            </button>
+                            <button class="toc-item-btn" onclick="goToSpread('contact')" type="button">
+                                <div class="toc-left">
+                                    <span class="toc-index">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cloud-icon">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                        </svg>
+                                        <span class="toc-number">05</span>
+                                    </span>
+                                    <div>
+                                        <h3 class="toc-tittle">Escribeme</h3>
+                                        <p class="toc-summary">Canales de contactp, GitHub, Linkedln, CV</p>
+                                    </div>
+                                </div>
+                                <span class="toc-page-num">06</span>
+                            </button>
+                        </nav>
                     </div>
-                    <p style="font-size: 0.85rem; color: var(--color-slate-600); margin-bottom: 1.4rem; line-height: 1.5;">
-                        Navega libremente por casa sección técnica del portafolio. Haz clic sobre cada título para saltar al capítulo correspondiente. 
-                    </p>
-                    <nav aria-label="Tabla de Navegación">
-                        <button  class="toc-item-btn" onclick="goToSpread('about')" type="button">
-                            <div></div>
-                        </button>
-                    </nav>
-                  </div>
 
+                    <div class="book-panel" id="panel-about">
+                        <div class="panel-header">
+                            <div>
+                                <span class="panel-subtitle">Capítulo 01</span>
+                                <h2 class="panel-title">Sobre mí</h2>
+                            </div>
+                            <span class="panel-filetag">about</span>
+                        </div>
+                        <p style="font-size: 1rem; line-height: 1.7; color: var(--color-slate-700); margin-bottom: 1rem;">
+                            Soy una desarrolladora junior con enfoque en frontend y backend, apasionada por crear soluciones limpias,
+                            funcionales y con buena experiencia de usuario.
+                        </p>
+                        <p style="font-size: 1rem; line-height: 1.7; color: var(--color-slate-700); margin-bottom: 1rem;">
+                            Me gusta transformar ideas en productos digitales con HTML, CSS, JavaScript, Java y Spring Boot,
+                            manteniendo buenas prácticas, accesibilidad y estructura clara en cada proyecto.
+                        </p>
+                        <p style="font-size: 1rem; line-height: 1.7; color: var(--color-slate-700);">
+                            Actualmente estoy fortaleciendo mis habilidades en desarrollo full-stack, diseño web y arquitectura de software,
+                            con interés en crecer en proyectos reales y colaborativos.
+                        </p>
+                    </div>
 
-             </section>
+                </div>
+            </section>
 
         </div>
 
