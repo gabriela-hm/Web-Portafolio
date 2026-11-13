@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,18 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://jsdelivr.net" />
     <script src="app.js" defer></script>
+    <script src="carrusel.js" defer></script>
 
 </head>
+
 <body>
     <!-- video de fondo -->
-        <img src="img/nubes_animadas_10s.gif" alt="fondo" id="video-fondo">
+    <img src="img/nubes_animadas_10s.gif" alt="fondo" id="video-fondo">
 
     <!-- pagina principal -->
     <main class="viewport-layout">
@@ -28,36 +33,45 @@
                 </aside>
 
                 <!-- diseño de ondas superior-->
-                <div aria-hidden="true" class="page-edges"></div> 
+                <div aria-hidden="true" class="page-edges"></div>
                 <div aria-hidden="true" class="cover-wave-top">
-                    <svg fill="none" preserveAspectRatio="none" viewbox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+                    <svg fill="none" preserveAspectRatio="none" viewbox="0 0 600 240"
+                        xmlns="http://www.w3.org/2000/svg">
                         <!-- tonos azules -->
-                        <path d="M0,0 L600,0 L600,85 C510,135 435,70 340,110 C250,150 160,185 0,160 Z" fill="#bae6fd" fill-opacity="0.8"></path> 
-                        <path d="M0,0 L440,0 C380,65 310,105 240,118 C155,135 90,122 0,160 Z" fill="#61C4FA" fill-opacity="0.88"></path>
+                        <path d="M0,0 L600,0 L600,85 C510,135 435,70 340,110 C250,150 160,185 0,160 Z" fill="#bae6fd"
+                            fill-opacity="0.8"></path>
+                        <path d="M0,0 L440,0 C380,65 310,105 240,118 C155,135 90,122 0,160 Z" fill="#61C4FA"
+                            fill-opacity="0.88"></path>
                         <path d="M0,0 L360,0 C310,50 250,82 185,92 C115,104 60,92 0,128 Z" fill="#0686CB"></path>
                         <path d="M0,0 L270,0 C220,38 175,62 125,68 C70,72 30,62 0,88 Z" fill="#05699E"></path>
                     </svg>
                 </div>
                 <!-- diseño de ondas inferior-->
                 <div aria-hidden="true" class="cover-wave-bottom">
-                    <svg fill="none" preserveaspectratio="none" viewbox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M170,260 C255,198 365,185 448,138 C518,98 560,68 600,58 L600,260 Z" fill="#bae6fd" fill-opacity="0.8"></path>
-                        <path d="M210,260 C295,202 380,198 458,162 C518,132 565,112 600,102 L600,260 Z" fill="#61C4FA" fill-opacity="0.88"></path>
-                        <path d="M255,260 C335,208 405,208 472,182 C532,158 570,142 600,138 L600,260 Z" fill="#0686CB"></path>
-                        <path d="M305,260 C385,212 445,222 508,202 C552,188 580,178 600,174 L600,260 Z" fill="#05699E"></path>
+                    <svg fill="none" preserveaspectratio="none" viewbox="0 0 600 260"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M170,260 C255,198 365,185 448,138 C518,98 560,68 600,58 L600,260 Z" fill="#bae6fd"
+                            fill-opacity="0.8"></path>
+                        <path d="M210,260 C295,202 380,198 458,162 C518,132 565,112 600,102 L600,260 Z" fill="#61C4FA"
+                            fill-opacity="0.88"></path>
+                        <path d="M255,260 C335,208 405,208 472,182 C532,158 570,142 600,138 L600,260 Z" fill="#0686CB">
+                        </path>
+                        <path d="M305,260 C385,212 445,222 508,202 C552,188 580,178 600,174 L600,260 Z" fill="#05699E">
+                        </path>
                     </svg>
 
                 </div>
 
                 <div class="cover-inner">
                     <header class="cover-header">
-                        <div class="brand-tag" >
-                            <svg xmlns="http://w3.org" viewBox="0 0 9 6" width="24" height="16" style="vertical-align: middle; box-shadow: 0 1px 3px rgba(0,0,0,0.2); border-radius: 2px;">
-                                <rect width="9" height="6" fill="#CE1126"/>
-                                <rect width="9" height="4.5" fill="#003893"/>
-                                <rect width="9" height="3" fill="#FCD116"/>
+                        <div class="brand-tag">
+                            <svg xmlns="http://w3.org" viewBox="0 0 9 6" width="24" height="16"
+                                style="vertical-align: middle; box-shadow: 0 1px 3px rgba(0,0,0,0.2); border-radius: 2px;">
+                                <rect width="9" height="6" fill="#CE1126" />
+                                <rect width="9" height="4.5" fill="#003893" />
+                                <rect width="9" height="3" fill="#FCD116" />
                             </svg>
-                            <span>Made in Colombia </span>
+                            <span>Hecho en Colombia </span>
                         </div>
                         <div class="tag-badges">
                             <span class="badge-pill">HTML</span>
@@ -66,31 +80,34 @@
                             <span class="badge-pill">JAVA</span>
                         </div>
                     </header>
-                
+
 
 
                     <!-- texto middle -->
                     <div class="cover-main-body">
-                        <h1  class="cover-title">PORTAFOLIO DE <span>DESARROLLO DE SOFTWARE</span></h1>
+                        <h1 class="cover-title">PORTAFOLIO DE <span>DESARROLLO DE SOFTWARE</span></h1>
                         <div class="divider-bar"></div>
                         <div class="author-name">Jeimy Gabriela Hernández Merchán</div>
-                        <p class="author-subtitle"> Desarroladora Junior Full-Stack Java </p>
+                        <p class="author-subtitle"> Desarrolladora de Software Full-Stack Jr </p>
                         <p class="cover-description">
-                        Bienvenid@ a mi Portafolio Digital. Aquí encontrarás una selección de mis proyectos tanto en Frontend como en Backend, 
-                        desarrollados con tecnologías modernas, enfoque en buenas prácticas de arquitectura de software e interfaces limpias e interactivas.
-                         </p>
+                            Bienvenid@ a mi Portafolio Digital. Aquí encontrarás una selección de mis proyectos tanto en
+                            Frontend como en Backend,
+                            desarrollados con tecnologías modernas, enfoque en buenas prácticas de arquitectura de
+                            software e interfaces limpias e interactivas.
+                        </p>
                         <!-- console log -->
                         <div class="comic-code-bubble">
                             <div class="bubble-dot"></div>
-                            <code class="bubble-code">console.log("¡Hola! 👋 Gracias por revisar mi trabajo")</code>
+                            <code class="bubble-code">console.log("👋 Gracias por revisar mi trabajo")</code>
                         </div>
                     </div>
                     <!-- footer -->
                     <footer class="cover-footer">
                         <button aria-label="Abrir el libro" class="btn-comic-action" type="button">
                             <div class="action-icon-disc">
-                             <svg fill="one" stroke="currentColor" viewbox="0 0 24 24">
-                                    <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <svg fill="one" stroke="currentColor" viewbox="0 0 24 24">
+                                    <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
                                 </svg>
                             </div>
                             <div>
@@ -99,13 +116,13 @@
                             </div>
                         </button>
                         <div class="pages-pill">PÁGINAS 01-07</div>
-                    </footer>  
-                </div>        
+                    </footer>
+                </div>
             </article>
 
             <!-- Libro abierto -->
             <section aria-label="Contenido interior del libro" class="book-spread" id="book-open">
-                
+
                 <!-- HOJA 1 TABLA DE CONTENIDO -->
 
                 <!-- interior header -->
@@ -113,7 +130,8 @@
                     <div class="spread-nav-group">
                         <button class="btn-close-book" id="btn-close-book" type="button">
                             <svg fill="none" height="14" stroke="currentColor" viewBox="0 0 24 24" width="14">
-                                <path d="M11 19l-7-7 7-7m8 14l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                <path d="M11 19l-7-7 7-7m8 14l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"></path>
                             </svg>
                             <span>Cerrar Portada</span>
                         </button>
@@ -132,18 +150,23 @@
                         <div class="panel-header">
                             <div>
                                 <h2 class="panel-title">ÍNDICE </h2>
-                                
+
                             </div>
                         </div>
-                        <p style="font-size: 0.85rem; color: var(--color-slate-600); margin-bottom: 1.4rem; line-height: 1.5;">
-                            Navega libremente por casa sección técnica del portafolio. Haz clic sobre cada título para saltar al capítulo correspondiente. 
+                        <p
+                            style="font-size: 0.85rem; color: var(--color-slate-600); margin-bottom: 1.4rem; line-height: 1.5;">
+                            Navega libremente por casa sección técnica del portafolio. Haz clic sobre cada título para
+                            saltar al capítulo correspondiente.
                         </p>
                         <nav aria-label="Tabla de Navegación">
                             <button class="toc-item-btn" onclick="goToSpread('about')" type="button">
                                 <div class="toc-left">
                                     <span class="toc-index">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cloud-icon">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="cloud-icon">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
                                         </svg>
                                         <span class="toc-number">01</span>
                                     </span>
@@ -157,8 +180,11 @@
                             <button class="toc-item-btn" onclick="goToSpread('skills')" type="button">
                                 <div class="toc-left">
                                     <span class="toc-index">
-                                       <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cloud-icon">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="cloud-icon">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
                                         </svg>
                                         <span class="toc-number">02</span>
                                     </span>
@@ -172,14 +198,18 @@
                             <button class="toc-item-btn" onclick="goToSpread('frontend1')" type="button">
                                 <div class="toc-left">
                                     <span class="toc-index">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cloud-icon">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="cloud-icon">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
                                         </svg>
                                         <span class="toc-number">03</span>
                                     </span>
                                     <div>
                                         <h3 class="toc-tittle">Proyectos Frontend</h3>
-                                        <p class="toc-summary">2 proyectos interactivos construidos con HTML, CSS Y JS</p>
+                                        <p class="toc-summary">2 proyectos interactivos construidos con HTML, CSS Y JS
+                                        </p>
                                     </div>
                                 </div>
                                 <span class="toc-page-num">04</span>
@@ -187,14 +217,18 @@
                             <button class="toc-item-btn" onclick="goToSpread('backend1')" type="button">
                                 <div class="toc-left">
                                     <span class="toc-index">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cloud-icon">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="cloud-icon">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
                                         </svg>
                                         <span class="toc-number">04</span>
                                     </span>
                                     <div>
                                         <h3 class="toc-tittle">Proyectos Backend</h3>
-                                        <p class="toc-summary">2 proyectos de backend construidos con Spring Boot, Auth JWT...</p>
+                                        <p class="toc-summary">2 proyectos de backend construidos con Spring Boot, Auth
+                                            JWT...</p>
                                     </div>
                                 </div>
                                 <span class="toc-page-num">05</span>
@@ -202,8 +236,11 @@
                             <button class="toc-item-btn" onclick="goToSpread('contact')" type="button">
                                 <div class="toc-left">
                                     <span class="toc-index">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cloud-icon">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-blue-bright)"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="cloud-icon">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
                                         </svg>
                                         <span class="toc-number">05</span>
                                     </span>
@@ -230,27 +267,58 @@
                         </div>
                         <div class="comic-box">
                             <div class="comic-img">
-                                <img src="img/IMG_recort.jpg" alt="foto sobre mi" class= "profile-photo">
+                                <div class="carousel-slides">
+                                    <img src="img/IMG_recort.jpg" alt="foto principal" class="profile-photo slide active">
+                                    <img src="img/IMG_1.jpg" alt="foto principal" class="profile-photo slide ">
+                                    <img src="img/IMG_2-.jpg" alt="foto principal" class="profile-photo slide ">
+                                    <img src="img/IMG-3.jpg" alt="foto principal" class="profile-photo slide ">
+                                </div>
+
+                                <div class="carousel-dots">
+                                    <span class="dot active" data-index="0"></span>
+                                    <span class="dot" data-index="1"></span>
+                                    <span class="dot" data-index="2"></span>
+                                    <span class="dot" data-index="3"></span>
+                                </div>
                             </div>
-                            <div class= "me">
-                                <h3 class= "me-name">
+                            <div class="me">
+                                <h3 class="me-name">
                                     Gabriela Hernández
                                 </h3>
-                                <p class= "me-position">
+                                <p class="me-position">
                                     Desarrolladora de Software Full-Stack Jr
                                 </p>
                                 <p class="me-des">
-                                    Enfocada en escibir código limpio y bien tipado con sólidos fundamentos de arquitectura de software, patrones SOLID y POO en Java y JavaScript. 
+                                    Enfocada en escibir código limpio con sólidos fundamentos de
+                                    arquitectura de software, patrones SOLID y POO en Java y JavaScript.
                                 </p>
                             </div>
 
 
                             <div class="about-content">
                                 <h4 class="h4-about-me">
-                                     Mi Formación
+                                    Mi Formación
                                 </h4>
                                 <p class="p-about-me">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta repellendus at eum iste, magni molestiae quos accusamus, architecto voluptate sit fugiat autem nemo est corrupti consequatur perspiciatis distinctio commodi?
+                                    <span class="icon-text-row">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-white)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                                        </svg>
+                                        <span>Ingenieria de Software - Cursando 5to semestre</span>
+                                    </span>
+                                    <span class="icon-text-row">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-white)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                                        </svg>
+                                        <span>Bootcamp Generation Col - Desarrollador Jr Full-Stack Java </span>
+                                    </span>
+                                   
+                                    <span class="icon-text-row">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="var(--color-white)" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                                        </svg>
+                                        <span>Tecnólogo SENA - Análisis y Desarrollo de Software</span>
+                                    </span>
                                 </p>
                             </div>
                             <div class="about-content">
@@ -258,7 +326,9 @@
                                     Pasión y Filosofía
                                 </h4>
                                 <p class="p-about-me">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta repellendus at eum iste, magni molestiae quos accusamus, architecto voluptate sit fugiat autem nemo est corrupti consequatur perspiciatis distinctio commodi?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta
+                                    repellendus at eum iste, magni molestiae quos accusamus, architecto voluptate sit
+                                    fugiat autem nemo est corrupti consequatur perspiciatis distinctio commodi?
                                 </p>
                             </div>
                             <div class="about-content">
@@ -266,19 +336,14 @@
                                     Metodología ante Desafíos
                                 </h4>
                                 <p class="p-about-me">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta repellendus at eum iste, magni molestiae quos accusamus, architecto voluptate sit fugiat autem nemo est corrupti consequatur perspiciatis distinctio commodi?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta
+                                    repellendus at eum iste, magni molestiae quos accusamus, architecto voluptate sit
+                                    fugiat autem nemo est corrupti consequatur perspiciatis distinctio commodi?
                                 </p>
                             </div>
 
                         </div>
 
-                        
-
-                        
-
-                        
-
-                        
 
 
 
@@ -286,7 +351,14 @@
 
 
 
-                       
+
+
+
+
+
+
+
+
                     </div>
 
                 </div>
@@ -298,7 +370,7 @@
 
 
 
-        
+
 
 
 
@@ -307,6 +379,7 @@
 
 
     </main>
-    
+
 </body>
+
 </html>

@@ -183,3 +183,5 @@ document.addEventListener("keydown", (e) => {
 
 // inicializa al cargar la pagina
 buildDots();
+
+

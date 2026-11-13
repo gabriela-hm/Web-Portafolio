@@ -22,6 +22,7 @@
   --color-blue-navy: #0369a1;
   --color-blue-midnight: #044B72;
   --color-emerald: #10b981;
+  --color-menta-oscuro: #059669;
 
 
   --font-sans: "Inter", "Open Sans", sans-serif;   /*texto general*/
@@ -778,32 +779,77 @@ body {
 
 /* SOBRE MI */
 .comic-box {
-  display: block; 
-  gap: 1.2rem; 
-  align-items: flex-start; 
-  flex-wrap: wrap;
-  
+  display: flow-root;
 }
 
 
 .comic-img {
-  width: 150px; 
-  height: 180px; 
-  border-radius: 16px; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  flex-shrink: 0; 
-  overflow: hidden;
   float: left;
-  margin-right: 1.2rem;
-  margin-bottom: 0.5rem;
+  position: relative;
+  width: 190px;
+  height: 240px;
+  margin: 0 2rem 1rem 0;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
-.profile-photo{
-  width: 100%; 
-  height: 100%; 
-  object-fit: contain;
+.carousel-slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.profile-photo.slide { /* Todas las fotos se superponen en el mismo espacio */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Evita que las fotos se deformen */
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  pointer-events: none;
+}
+
+
+.profile-photo.slide.active { /* Solo la foto con la clase 'active' es visible */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Contenedor de los círculos */
+.carousel-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.25); /* Fondo sutil para que los puntos siempre se vean */
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.dot.active {
+  background-color: #ffffff;
+  transform: scale(1.2);
 }
 
 .me{
@@ -814,8 +860,9 @@ body {
   font-size: 1.25rem;
   font-weight: 850;
   color: var(--color-slate-900);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
+  transform: translateY(-6px); /* dezplza el nombre hacia arriba */
 }
 
 .me-position{
@@ -823,6 +870,7 @@ body {
   font-size: 0.75rem; 
   color: var(--color-blue-navy); 
   font-weight: 700;
+  transform: translateY(-12px);
 }
 
 .me-des{
@@ -831,12 +879,15 @@ body {
   color: var(--color-slate-600); 
   margin-top: 0.5rem; 
   line-height: 1.5;
+  transform: translateY(-10px);
 }
 
 .about-content{
+  margin-top: 2.5rem;
+}
+
+.me + .about-content{
   margin-top: 1.2rem;
-  display: flex;
-  flex-direction: column;
 }
 
 .h4-about-me{
@@ -854,6 +905,24 @@ body {
   font-size: 0.84rem;
   color: var(--color-slate-700);
   line-height: 1.6;
+}
+
+.icon-text-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.icon-text-row > span {
+  min-width: 0;
+}
+
+.icon-text-row svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;        /* Evita que el icono se comprima si el texto es largo */
+  color: var(--color-emerald);
 }
 
 /* 829 */

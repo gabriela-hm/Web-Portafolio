@@ -9,7 +9,6 @@ Deploy: [Link del deployment ](https://gabriela-hm.github.io/Web-Portafolio/)
 
 # Sobremi
 
-1. revisar foto y descripcion
-2. completar información
+2. completar infomacion
 3. ancho de texto
 4. frase footer
