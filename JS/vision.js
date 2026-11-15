@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const fullText = element.textContent.trim();
 
     let index = 0;
-    const writeSpeed = 45; // milisegundos por letra
+    const writeSpeed = 80; // milisegundos por letra
     const staticTime = 3500; // tiempo que se queda quieto con fondo
 
 
