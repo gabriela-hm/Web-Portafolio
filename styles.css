@@ -472,7 +472,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1; /* define que elmento va por encima */
-  border-radius: 14px;
+  border-radius: 0px 0px 7px 7px;;
   background: var(--color-white);
   border: 1px solid var(--color-slate-200);
   box-shadow: var(--shadow-book-open);
@@ -679,13 +679,12 @@ body {
 }
 
 .panel-title::after {
-  content: "";
+  content: "- - - !>";
   display: block;
-  width: 45px;
-  height: 4px;
-  margin-top: 6px;
-  border-radius: 10px;
-  background: var(--color-slate-400);
+  margin-top: 2px;
+  color: var(--color-slate-400);
+  font-family: monospace;
+  font-size: 1rem;
 }
 
 .panel-filetag {
@@ -788,7 +787,7 @@ body {
   position: relative;
   width: 190px;
   height: 240px;
-  margin: 0 2rem 1rem 0;
+  margin: 0 3rem 2rem 0;
   border-radius: 16px;
   overflow: hidden;
 }
@@ -818,7 +817,7 @@ body {
   pointer-events: auto;
 }
 
-/* Contenedor de los círculos */
+/* Contenedor de los círculos imagenes*/
 .carousel-dots {
   position: absolute;
   bottom: 12px;
@@ -896,7 +895,7 @@ body {
   font-size: 0.78rem;
   text-transform: uppercase;
   color: var(--color-slate-900);
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
   font-weight: 800;
 }
 
@@ -923,6 +922,45 @@ body {
   height: 20px;
   flex-shrink: 0;        /* Evita que el icono se comprima si el texto es largo */
   color: var(--color-emerald);
+}
+
+/* vision, frase */
+
+.vision-typewriter {
+  display: inline-block;
+  padding: 18px 26px;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  margin: 10px 0; /* Evita que el contenedor salte cuando el texto se borra */
+}
+
+.vision-typewriter.resaltado { /* activa al terminar de escribir */
+  background-color: #FCE6F9;
+  box-shadow: none;
+}
+
+#vision {
+  font-family: 'Courier New', 'Fira Code', monospace;
+  font-size: 0.95rem;
+  color: var(--color-slate-500);
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+#vision::after {
+  content: "|";
+  color: var(--color-slate-950);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  animation: parpadeo 0.7s step-end infinite;
+}
+
+#vision.resaltado::after {
+  content: none;
+}
+
+@keyframes parpadeo { /* animacion del parpadeo del cursor */
+  50% { opacity: 0;}
 }
 
 /* 829 */

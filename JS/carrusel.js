@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".comic-img .slide");
     const dots = document.querySelectorAll(".comic-img .dot");
+    const aboutPanel = document.querySelector("#panel-about");
     let currentIndex = 0;
     let slideInterval;
     const intervalTime = 3000; // 3000 ms = 3 segundos
@@ -30,6 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
         slideInterval = setInterval(nextSlide, intervalTime);
     }
 
+    function syncCarouselWithPanel() {
+        if (aboutPanel.classList.contains("active")) {
+            showSlide(0);
+            resetInterval();
+        } else {
+            clearInterval(slideInterval);
+        }
+    }
+
     // Evento de clic para cada círculo
     dots.forEach((dot, index) => {
         dot.addEventListener("click", () => {
@@ -38,6 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Arranca el carrusel al cargar la página
-    resetInterval();
+    showSlide(0);
+    new MutationObserver(syncCarouselWithPanel).observe(aboutPanel, {
+        attributes: true,
+        attributeFilter: ["class"]
+    });
+    syncCarouselWithPanel();
 });
