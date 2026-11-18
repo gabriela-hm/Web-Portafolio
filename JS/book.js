@@ -34,7 +34,7 @@ function buildDots() {
     dot.setAttribute("aria-label", `Ir a página ${index + 1}: ${spread.title}`);
     //Define la acción de salto de página al hacer clic
     dot.addEventListener("click", () => {
-      currentSpreadIdx = foundIdx;
+      currentSpreadIdx = index;
       updateView();
     });
     dotsContainer.appendChild(dot);
@@ -145,14 +145,15 @@ btnClose.addEventListener("click", (e) => {
   e.stopPropagation();
   closeBook();
 });
-//Retrocede a la página anterior
+
+// Navegación con los botones anterior y siguiente
 btnPrev.addEventListener("click", () => {
   if (currentSpreadIdx > 0) {
     currentSpreadIdx--;
     updateView();
   }
 });
-//Avanza a la siguiente página
+
 btnNext.addEventListener("click", () => {
   if (currentSpreadIdx < SPREADS.length - 1) {
     currentSpreadIdx++;
