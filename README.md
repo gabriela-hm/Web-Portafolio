@@ -9,6 +9,9 @@ Deploy: [Link del deployment ](https://gabriela-hm.github.io/Web-Portafolio/)
 
 # Sobremi
 
-2. completar infomacion
-3. ancho de texto
-4. frase footer
+1. cambiar metodología
+
+# Stack herramientas
+
+1. habilidades blandas
+2. que se marquen cuando el hover

@@ -2,9 +2,10 @@ const SPREADS = [
   { id: "toc", title: "TABLA DE CONTENIDOS" },
   { id: "about", title: "SOBRE MÍ" },
   { id: "skills", title: "MI CAJA DE HERRAMIENTAS" },
-  { id: "frontend", title: "PROYECTOS FRONTEND" },
-  { id: "backend1", title: "PROYECTOS BACKEND (01 & 02)" },
-  { id: "backend2", title: "PROYECTOS BACKEND (03 & 04)" },
+  { id: "frontend1", title: "PROYECTOS FRONTEND 1/2" },
+  { id: "frontend2", title: "PROYECTOS FRONTEND 2/2" },
+  { id: "backend1", title: "PROYECTOS BACKEND 1/2" },
+  { id: "backend2", title: "PROYECTOS BACKEND 2/2" },
   { id: "contact", title: "SIGAMOS CONSTRUYENDO" },
 ];
 
