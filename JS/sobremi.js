@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //-------------------------------------------------------------------------------------------------------
     //ANIMACION CARTAS, BOTONES --FLUJO SECUENCIAL
     const cards = document.querySelectorAll(".star-card");
-    const sequenceOrder = [2,0,1,3];
+    const sequenceOrder = [0,1,2,3,4];
     let stepIndex = 0;
 
     //actualizar qué boton debe tener la animacion de movimiento

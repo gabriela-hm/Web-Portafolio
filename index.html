@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://jsdelivr.net" />
     <script src="JS/book.js" defer></script>
     <script src="JS/sobremi.js" defer></script>
+    <script src="JS/stack.js" defer></script>
     
 
 </head>
@@ -345,68 +346,12 @@
                             </div>
                             <div class="about-content">
                                 <h4 class="h4-about-me">
-                                    Desafíos = Metodología STAR
+                                    Desafíos = Metodología SCRUM
                                 </h4>
 
                                 <div class="star-grid">
                                    
-                                    <!-- tarjeta t-->
-                                    <div class="star-card">
-                                        <div class="star-card-inner">
-                                            <div class="star-card-front">
-                                                <svg class="cloud-frame" viewBox="0 0 340 210" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                                                    <path
-                                                        d="M 128 154 C 100 174, 48 170, 26 142 C 8 118, 18 90, 50 88 C 52 64, 74 50, 98 54 C 102 20, 144 4, 184 14 C 210 20, 228 38, 230 56 C 256 52, 280 70, 280 92 C 310 90, 330 112, 324 136 C 318 162, 274 172, 232 158 C 200 180, 154 176, 128 154 Z"
-                                                        fill="var(--color-blue-tint)" stroke="var(--color-blue-soft)" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                <span class="star-letter">T</span>
-                                                <span class="star-title">Tarea</span>
-                                                <button class="star-flip-btn" type="button"
-                                                    aria-label="Ver detalle de Tarea">
-                                                    <span>Ver</span>
-                                                </button>
-                                            </div>
-                                            <div class="star-card-back">
-                                                <p>Delimito mi responsabilidad, establezco criterios de aceptación
-                                                    claros, divido el reto en subtareas.</p>
-                                                <button class="star-flip-btn" type="button" aria-label="Volver a Tarea">
-                                                    <span>Volver</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- tarjeta A-->
-                                    <div class="star-card">
-                                        <div class="star-card-inner">
-                                            <div class="star-card-front">
-                                                <svg class="cloud-frame" viewBox="0 0 340 210" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                                                    <path
-                                                        d="M 128 154 C 100 174, 48 170, 26 142 C 8 118, 18 90, 50 88 C 52 64, 74 50, 98 54 C 102 20, 144 4, 184 14 C 210 20, 228 38, 230 56 C 256 52, 280 70, 280 92 C 310 90, 330 112, 324 136 C 318 162, 274 172, 232 158 C 200 180, 154 176, 128 154 Z"
-                                                        fill="var(--color-blue-tint)" stroke="var(--color-blue-soft)" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                <span class="star-letter">A</span>
-                                                <span class="star-title">Acción</span>
-                                                <button class="star-flip-btn" type="button"
-                                                    aria-label="Ver detalle de Acción">
-                                                    <span>Ver</span>
-                                                </button>
-                                            </div>
-                                            <div class="star-card-back">
-                                                
-                                                <p>Diseño soluciones limpias aplicando prinpios SOLID, refactorización y
-                                                    pruebas de calidad.</p>
-                                                <button class="star-flip-btn" type="button"
-                                                    aria-label="Volver a Acción">
-                                                    <span>Volver</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                      <!-- tarjeta s -->
+                                    <!-- tarjeta s-->
                                     <div class="star-card">
                                         <div class="star-card-inner">
                                             <div class="star-card-front">
@@ -418,20 +363,49 @@
                                                         stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
                                                 <span class="star-letter">S</span>
-                                                <span class="star-title">Situación</span>
+                                                <span class="star-title">Alcance</span>
                                                 <button class="star-flip-btn" type="button"
-                                                    aria-label="Ver detalle de Situación">Ver</button>
+                                                    aria-label="Ver detalle de Alcance">
+                                                    <span>Ver</span>
+                                                </button>
                                             </div>
                                             <div class="star-card-back">
-                                                
-                                                <p>Comprendo el escenario técnico, lógica de negocio y raíz del
-                                                    problema.</p>
-                                                <button class="star-flip-btn" type="button"
-                                                    aria-label="Volver a Situación">Volver</button>
+                                                <p>Delimito mi responsabilidad y el alcance de lo que voy a construir antes de empezar.</p>
+                                                <button class="star-flip-btn" type="button" aria-label="Volver a Tarea">
+                                                    <span>Volver</span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- tarjeta R-->
+                                    <!-- tarjeta C-->
+                                    <div class="star-card">
+                                        <div class="star-card-inner">
+                                            <div class="star-card-front">
+                                                <svg class="cloud-frame" viewBox="0 0 340 210" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                                    <path
+                                                        d="M 128 154 C 100 174, 48 170, 26 142 C 8 118, 18 90, 50 88 C 52 64, 74 50, 98 54 C 102 20, 144 4, 184 14 C 210 20, 228 38, 230 56 C 256 52, 280 70, 280 92 C 310 90, 330 112, 324 136 C 318 162, 274 172, 232 158 C 200 180, 154 176, 128 154 Z"
+                                                        fill="var(--color-blue-tint)" stroke="var(--color-blue-soft)" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="star-letter">C</span>
+                                                <span class="star-title">Criterio</span>
+                                                <button class="star-flip-btn" type="button"
+                                                    aria-label="Ver detalle de Criterio">
+                                                    <span>Ver</span>
+                                                </button>
+                                            </div>
+                                            <div class="star-card-back">
+                                                
+                                                <p>Establezco criterios de aceptación claros y mantengo comunicación constante para avanzar sin bloqueos.</p>
+                                                <button class="star-flip-btn" type="button"
+                                                    aria-label="Volver a Acción">
+                                                    <span>Volver</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                      <!-- tarjeta R -->
                                     <div class="star-card">
                                         <div class="star-card-inner">
                                             <div class="star-card-front">
@@ -443,15 +417,66 @@
                                                         stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
                                                 <span class="star-letter">R</span>
-                                                <span class="star-title">Resultado</span>
+                                                <span class="star-title">Revisión</span>
                                                 <button class="star-flip-btn" type="button"
-                                                    aria-label="Ver detalle de Resultado">
+                                                    aria-label="Ver detalle de Revisión">Ver</button>
+                                            </div>
+                                            <div class="star-card-back">
+                                                
+                                                <p>Reviso el progreso paso a paso, detecto ajustes a tiempo y mantengo un ritmo constante.</p>
+                                                <button class="star-flip-btn" type="button"
+                                                    aria-label="Volver a Situación">Volver</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- tarjeta U-->
+                                    <div class="star-card">
+                                        <div class="star-card-inner">
+                                            <div class="star-card-front">
+                                                <svg class="cloud-frame" viewBox="0 0 340 210" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                                    <path
+                                                        d="M 128 154 C 100 174, 48 170, 26 142 C 8 118, 18 90, 50 88 C 52 64, 74 50, 98 54 C 102 20, 144 4, 184 14 C 210 20, 228 38, 230 56 C 256 52, 280 70, 280 92 C 310 90, 330 112, 324 136 C 318 162, 274 172, 232 158 C 200 180, 154 176, 128 154 Z"
+                                                        fill="var(--color-blue-tint)" stroke="var(--color-blue-soft)" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="star-letter">U</span>
+                                                <span class="star-title">Tareas</span>
+                                                <button class="star-flip-btn" type="button"
+                                                    aria-label="Ver detalle de Tareas">
                                                     <span>Ver</span>
                                                 </button>
                                             </div>
                                             <div class="star-card-back">
-                                                <p>Valido la estabilidad del sistema, documentación y entrega del
-                                                    software escalable y funcional.</p>
+                                                <p>Divido el reto en subtareas pequeñas y concretas para avanzar con orden</p>
+                                                <button class="star-flip-btn" type="button"
+                                                    aria-label="Volver a Resultado">
+                                                    <span>Volver</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- tarjeta M-->
+                                    <div class="star-card">
+                                        <div class="star-card-inner">
+                                            <div class="star-card-front">
+                                                <svg class="cloud-frame" viewBox="0 0 340 210" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                                    <path
+                                                        d="M 128 154 C 100 174, 48 170, 26 142 C 8 118, 18 90, 50 88 C 52 64, 74 50, 98 54 C 102 20, 144 4, 184 14 C 210 20, 228 38, 230 56 C 256 52, 280 70, 280 92 C 310 90, 330 112, 324 136 C 318 162, 274 172, 232 158 C 200 180, 154 176, 128 154 Z"
+                                                        fill="var(--color-blue-tint)" stroke="var(--color-blue-soft)" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="star-letter">M</span>
+                                                <span class="star-title">Medición</span>
+                                                <button class="star-flip-btn" type="button"
+                                                    aria-label="Ver detalle de Medición">
+                                                    <span>Ver</span>
+                                                </button>
+                                            </div>
+                                            <div class="star-card-back">
+                                                <p>Mido lo logrado, aprendo de cada entrega y aplico mejora continua en el siguiente ciclo.</p>
                                                 <button class="star-flip-btn" type="button"
                                                     aria-label="Volver a Resultado">
                                                     <span>Volver</span>
@@ -486,8 +511,8 @@
                         <div class="comic-box">
                             <h4 class="h4-stack">Back-End</h4>
                             <div class="tech-pill-container">
-                                <span class="tech-badge highlight">Java</span>
-                                <span class="tech-badge highlight">Python</span>
+                                <span class="tech-badge">Java</span>
+                                <span class="tech-badge">Python</span>
                                 <span class="tech-badge">Django</span>
                                 <span class="tech-badge">Azure Functions</span>
                                 <span class="tech-badge">REST API</span>
@@ -496,8 +521,8 @@
                         <div class="comic-box">
                             <h4 class="h4-stack">Datos & Cloud</h4>
                             <div class="tech-pill-container">
-                                <span class="tech-badge highlight">Spring Boot</span>
-                                <span class="tech-badge highlight">PostgreSQL</span>
+                                <span class="tech-badge">Spring Boot</span>
+                                <span class="tech-badge">PostgreSQL</span>
                                 <span class="tech-badge">Azure SQL</span>
                                 <span class="tech-badge">Git</span>
                                 <span class="tech-badge">GitHub</span>
