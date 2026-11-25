@@ -1,0 +1,97 @@
+/* =====================================================
+   INDICE.CSS
+   Página 1: tabla de contenidos.
+   (Los colores salen de temas.css con var(--...))
+   ===================================================== */
+
+/* enlaces capitulos */
+.toc-item-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+  margin-bottom: 0.45rem;
+  font-family: inherit;
+}
+
+.toc-item-btn:hover {
+  background: var(--toc-hover-bg);
+  border-color: var(--toc-hover-border);
+  transform: translateX(2px);
+}
+
+.toc-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toc-index {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 38px;
+  background: transparent;
+  border: none;
+  flex-shrink: 0;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--toc-title);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.cloud-icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: var(--toc-cloud);   /* la línea de la nube (stroke=currentColor) */
+  fill: var(--toc-cloud);    /* el relleno: antes estaba en el HTML, el CSS tiene prioridad */
+  stroke-width: 1.5; /* grosor de la linea de un icono SVG */
+}
+
+.toc-number {
+  position: relative;
+  z-index: 1;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--toc-number);
+  transform: translateY(3px);
+}
+
+.toc-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--toc-title);
+}
+
+.toc-summary {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: var(--toc-summary);
+}
+
+.toc-page-num {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--toc-page);
+  font-weight: 400;
+}
+
+/* Párrafo de introducción del índice (antes tenía style="..." dentro del HTML) */
+.panel-intro {
+  font-size: 0.85rem;
+  color: var(--description);
+  margin-bottom: 1.4rem;
+  line-height: 1.5;
+}

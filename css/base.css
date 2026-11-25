@@ -1,0 +1,117 @@
+
+
+:root {
+  --font-sans: "Inter", "Open Sans", sans-serif;   /*texto general*/
+  --font-display: "Bebas Neue", sans-serif;   /*titulos*/
+  --font-mono: "Fira Code", monospace;   /* antes no existía, la usa .action-label-sub */
+  --shadow-spine: inset -8px 0 16px -4px rgba(29, 34, 50, 0.45), 6px 0 14px -3px rgba(0, 0, 0, 0.35);   /*sombra lomo*/
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--text-base);  /*color textos*/
+  font-family: var(--font-sans);
+  overflow-x: hidden;   /* evitar barra de desplazamiento */
+  -webkit-font-smoothing: antialiased;   /* suaviza los bordes de las letras */
+  -moz-osx-font-smoothing: grayscale;  /* suaviza los bordes de las letras */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+
+}
+
+::selection {
+  background-color: var(--selection);   /* estilos a texto seleccionado */
+  color: var(--color-white);
+}
+
+.viewport-layout {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1060px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+.book-stage {
+  position: relative;
+  width: 90%;
+  max-width: 760px;
+  height: 90vh;
+  max-height: 650px;
+  min-height: 480px;
+  perspective: 2400px;   /* profundidad 3d */
+  transition: max-width 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+  margin: 0;
+}
+
+
+/* FONDO */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--bg-fallback);   /* color que se ve si el archivo no existe o aún carga */
+  background-image: var(--bg-animated);
+  background-size: cover;                 /* igual que object-fit: cover */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* BOTONES PARA CAMBIAR DE MODO */
+
+.theme-switcher {
+  position: fixed;   /* se queda quieto aunque cambies de página */
+  top: 12px;
+  right: 12px;
+  z-index: 200;
+  display: flex;
+  gap: 6px;
+}
+
+.theme-button {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--tag-border);
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  cursor: pointer;
+}
+
+.theme-button:hover {
+  border-color: var(--switcher-active);
+}
+
+/* el botón del modo que está activo */
+.theme-button.is-active {
+  background: var(--switcher-active);
+  border-color: var(--switcher-active);
+  color: var(--color-white);
+}

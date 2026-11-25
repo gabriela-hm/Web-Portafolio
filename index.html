@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/temas.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/portada.css">
+    <link rel="stylesheet" href="css/contenido.css">
+    <link rel="stylesheet" href="css/indice.css">
+    <link rel="stylesheet" href="css/sobremi.css">
+    <link rel="stylesheet" href="css/stack.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,13 +21,19 @@
     <script src="JS/book.js" defer></script>
     <script src="JS/sobremi.js" defer></script>
     <script src="JS/stack.js" defer></script>
+    <script src="JS/temas.js" defer></script>
     
 
 </head>
 
 <body>
-    <!-- video de fondo -->
-    <img src="img/nubes_animadas_10s.gif" alt="fondo" id="video-fondo">
+    <!-- aplica el modo guardado antes de dibujar la página (evita el parpadeo) -->
+    <script>
+        var initialTheme = localStorage.getItem("tema-portafolio");
+        if (initialTheme === "atardecer" || initialTheme === "noche") {
+            document.body.setAttribute("data-tema", initialTheme);
+        }
+    </script>
 
     <!-- pagina principal -->
     <main class="viewport-layout">
@@ -107,7 +119,7 @@
                     <footer class="cover-footer">
                         <button aria-label="Abrir el libro" class="btn-comic-action" type="button">
                             <div class="action-icon-disc">
-                                <svg fill="one" stroke="currentColor" viewbox="0 0 24 24">
+                                <svg fill="none" stroke="currentColor" viewbox="0 0 24 24">
                                     <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round">
                                     </path>
                                 </svg>
@@ -155,8 +167,7 @@
 
                             </div>
                         </div>
-                        <p
-                            style="font-size: 0.85rem; color: var(--color-slate-600); margin-bottom: 1.4rem; line-height: 1.5;">
+                        <p class="panel-intro">
                             Navega libremente por casa sección técnica del portafolio. Haz clic sobre cada título para
                             saltar al capítulo correspondiente.
                         </p>

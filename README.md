@@ -7,11 +7,6 @@ Deploy: [Link del deployment ](https://gabriela-hm.github.io/Web-Portafolio/)
 
 1. colores, contrastes, accesibilidad
 
-# Sobremi
-
-1. cambiar metodología
-
 # Stack herramientas
 
 1. habilidades blandas
-2. que se marquen cuando el hover

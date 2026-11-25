@@ -1,0 +1,420 @@
+
+/* MAÑANA */
+:root {
+
+  --color-white: #ffffff;
+  --color-paper: #fcfdfe;
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+
+  --color-blue-tint: #e0f2fe;
+  --color-blue-soft: #bae6fd;
+  --color-blue-sky: #7dd3fc;
+  --color-blue-bright: #38bdf8;
+  --color-blue-primary: #0ea5e9;
+  --color-blue-deep: #0284c7;
+  --color-blue-navy: #0369a1;
+  --color-blue-midnight: #044B72;
+  --color-emerald: #10b981;
+  --color-emerald-soft: #E8FDF6;
+  --color-menta-oscuro: #059669;
+
+
+  /* FONDO DE LA PÁGINA */
+  --bg-animated: url("../img/nubes_animadas_10s.gif");
+  --bg-fallback: #bae6fd;  
+
+  /* GENERALES  */
+  --text-base: var(--color-slate-100);
+  --selection: var(--color-blue-primary);
+  --glow: rgba(14, 165, 233, 0.18);          /* resplandor de las sombras */
+  --glow-strong: rgba(14, 165, 233, 0.28);
+  --shadow-book-open: 0 12px 40px -12px rgba(0, 0, 0, 0.35);   
+
+  /* PORTADA: LIBRO  */
+  --book-bg: var(--color-blue-soft);
+  --book-border: rgba(226, 232, 240, 0.95);
+  --book-back: var(--color-paper);
+
+  /* Lomo */
+  --spine-bg: linear-gradient(90deg, #d8e2ec 0%, #ffffff 45%, #cfdce8 90%, #9cb3c9 100%);
+  --spine-border: #cbd5e1;
+  --spine-text: var(--color-slate-600);
+  --spine-dot: var(--color-blue-primary);
+
+  /* Borde de las páginas */
+  --page-edges-bg: repeating-linear-gradient(90deg, #f8fafc 0px, #e2e8f0 1.5px, #cbd5e1 3px);
+  --page-edges-border: #cbd5e1;
+
+  /* Ondas  */
+  --wave-1: #bae6fd;
+  --wave-2: #61C4FA;
+  --wave-3: #0686CB;
+  --wave-4: #05699E;
+
+ 
+  --tag-bg: var(--color-blue-tint);
+  --tag-text: var(--color-blue-navy);
+  --tag-border: var(--color-blue-soft);
+  --tag-alt-bg: rgba(255, 255, 255, 0.95);
+  --tag-alt-text: var(--color-slate-800);
+  --tag-alt-border: var(--color-slate-300);
+
+  --title: var(--color-blue-midnight);
+  --title-accent: var(--color-blue-deep);
+  --divider: var(--color-blue-primary);
+  --author: var(--color-slate-900);
+  --subtitle: var(--color-blue-navy);
+  --description: var(--color-slate-600);
+
+  --bubble-bg: var(--color-blue-tint);
+  --bubble-border: rgba(207, 132, 33, 0.4);
+  --bubble-code: var(--color-blue-deep);   
+
+  --disc-bg: var(--color-blue-sky);
+  --disc-hover: var(--color-blue-navy);
+  --action-text: var(--color-slate-900);
+  --action-hover: var(--color-blue-navy);
+  --action-sub: var(--color-slate-500);
+  --pill-bg: var(--color-blue-tint);
+  --pill-text: var(--color-blue-midnight);
+  --pill-border: var(--color-slate-300);
+
+  /* LIBRO ABIERTO: HOJA, CABECERA Y BOTONES  */
+  --page-bg: var(--color-white);
+  --page-border: var(--color-slate-200);
+  --header-bg: rgba(255, 255, 255, 0.85);
+  --header-border: var(--color-slate-200);
+  --separator: var(--color-slate-300);
+  --folio-title: var(--color-blue-primary);        
+
+  /* Botones del libro cerrar, anterior, siguiente y contador de páginas */
+  --button-bg: var(--color-blue-tint);
+  --button-text: var(--color-blue-navy);
+  --button-border: var(--color-blue-soft);
+  --button-hover-bg: var(--color-blue-tint);
+  --button-active-bg: var(--color-blue-soft);
+
+  /* Barra de desplazamiento */
+  --scroll-track: var(--color-slate-100);
+  --scroll-thumb: var(--color-slate-300);
+  --scroll-thumb-hover: var(--color-blue-primary);
+
+  /* PÁGINAS: ENCABEZADOS  */
+  --panel-subtitle: var(--color-blue-primary);   /* "CAPÍTULO 02" */
+  --panel-title: var(--color-slate-950);
+  --panel-ornament: var(--color-slate-400);         /* el "-  - !>" bajo el título */
+  --panel-filetag: var(--color-slate-400);        /* "Stack.json" */
+
+  /*  ÍNDICE  */
+  --toc-hover-bg: var(--color-blue-tint);
+  --toc-hover-border: var(--color-blue-soft);
+  --toc-number: var(--color-white);
+  --toc-title: var(--color-slate-900);
+  --toc-summary: var(--color-slate-500);
+  --toc-page: var(--color-slate-400);
+  --toc-cloud: var(--color-blue-bright); /* nubes de los números */
+
+  /* PUNTOS DE NAVEGACIÓN */
+  --dot-bg: var(--color-slate-300);
+  --dot-active: var(--color-blue-primary);
+
+  /*  SOBRE MÍ */
+  --heading: var(--color-slate-900);           /* h4 de "Mi Formación" */
+  --paragraph: var(--color-slate-700);
+  --check-icon: var(--color-emerald);
+  --check-icon-fill: var(--color-white);
+
+  --quote-bg: #FCE6F9;                         /* frase que se escribe sola */
+  --quote-text: var(--color-slate-500);
+  --quote-author: var(--color-slate-600);
+  --quote-cursor: var(--color-slate-950);
+
+  /* DESAFÍOS TARJETAS SCRUM */
+  --cloud-bg: var(--color-blue-tint);
+  --cloud-border: var(--color-blue-soft);
+  --star-letter: var(--color-blue-deep);
+  --star-title: var(--color-slate-800);
+  --star-text: var(--color-slate-800);
+  --star-button: var(--color-blue-navy);
+  --star-button-text: var(--color-white);
+  --star-button-border: var(--color-paper);
+  --star-button-hover: var(--color-slate-700);
+  --star-focus: var(--color-blue-midnight);
+  --pulse: rgba(2, 132, 199, 0.4);                /* brillo del botón "Ver" */
+
+  /* STACK DE HERRAMIENTAS  */
+  --badge-bg: var(--color-paper);
+  --badge-text: var(--color-slate-900);
+  --badge-border: var(--color-slate-300);
+  --badge-check: var(--color-slate-400);
+  --badge-checked-bg: var(--color-emerald-soft);
+  --badge-checked-text: var(--color-slate-950);
+  --badge-checked-check: var(--color-emerald);
+
+  /* BOTONES PARA CAMBIAR DE MODO  */
+  --switcher-active: var(--color-blue-navy);
+}
+
+
+/* 
+   2. MODO ATARDECER----------------------------------------------------------------------------------------------------
+  */
+body[data-tema="atardecer"] {
+
+  
+  --bg-animated: url();
+  --bg-fallback: #3b2a4a;
+
+  --text-base: #ffe8d6;
+  --selection: #ea580c;
+  --glow: rgba(249, 115, 22, 0.25);
+  --glow-strong: rgba(249, 115, 22, 0.38);
+
+  /* Portada: libro */
+  --book-bg: #ffd9b8;
+  --book-border: rgba(255, 237, 213, 0.95);
+  --book-back: #fff8f1;
+  --spine-bg: linear-gradient(90deg, #e8c5a8 0%, #fff4ea 45%, #e0b895 90%, #b98563 100%);
+  --spine-border: #e0b895;
+  --spine-text: #6b3a4f;
+  --spine-dot: #ea580c;
+  --page-edges-bg: repeating-linear-gradient(90deg, #fff7ed 0px, #fed7aa 1.5px, #fdba74 3px);
+  --page-edges-border: #fdba74;
+  --wave-1: #fed7aa;
+  --wave-2: #fb9a5b;
+  --wave-3: #d9467a;
+  --wave-4: #6b2a86;
+
+  /* Portada: textos y adornos */
+  --tag-bg: #fff1e6;
+  --tag-text: #9a3412;
+  --tag-border: #fdba74;
+  --tag-alt-bg: rgba(255, 255, 255, 0.95);
+  --tag-alt-text: #3b0764;
+  --tag-alt-border: #e9c8b0;
+  --title: #4a1d5c;
+  --title-accent: #c2410c;
+  --divider: #ea580c;
+  --author: #2d1236;
+  --subtitle: #86198f;
+  --description: #5b3a4a;
+  --bubble-bg: #fff1e6;
+  --bubble-border: rgba(194, 65, 12, 0.4);
+  --bubble-code: #9a3412;
+  --disc-bg: #ea580c;
+  --disc-hover: #9a3412;
+  --action-text: #2d1236;
+  --action-hover: #9a3412;
+  --action-sub: #7c5a62;
+  --pill-bg: #fff1e6;
+  --pill-text: #4a1d5c;
+  --pill-border: #fdba74;
+
+  /* Libro abierto */
+  --page-bg: #fff8f1;
+  --page-border: #f1d3b8;
+  --header-bg: rgba(255, 248, 241, 0.85);
+  --header-border: #f1d3b8;
+  --separator: #e9c8b0;
+  --folio-title: #c2410c;
+  --button-bg: #fff1e6;
+  --button-text: #9a3412;
+  --button-border: #fdba74;
+  --button-hover-bg: #ffe4cc;
+  --button-active-bg: #fed7aa;
+  --scroll-track: #fdeee0;
+  --scroll-thumb: #e9c8b0;
+  --scroll-thumb-hover: #ea580c;
+
+  /* Páginas */
+  --panel-subtitle: #c2410c;
+  --panel-title: #2d1236;
+  --panel-ornament: #8a6674;
+  --panel-filetag: #8a6674;
+
+  /* Índice */
+  --toc-hover-bg: #fff1e6;
+  --toc-hover-border: #fdba74;
+  --toc-number: #ffffff;
+  --toc-title: #2d1236;
+  --toc-summary: #7c5a62;
+  --toc-page: #8a6674;
+  --toc-cloud: #ea580c;
+
+  /* Puntos */
+  --dot-bg: #e9c8b0;
+  --dot-active: #ea580c;
+
+  /* Sobre mí */
+  --heading: #2d1236;
+  --paragraph: #4b2e3a;
+  --check-icon: #059669;
+  --check-icon-fill: #fff8f1;
+  --quote-bg: #fde2e4;
+  --quote-text: #6b4a58;
+  --quote-author: #7c5a62;
+  --quote-cursor: #2d1236;
+
+  /* Desafíos */
+  --cloud-bg: #fff1e6;
+  --cloud-border: #fdba74;
+  --star-letter: #c2410c;
+  --star-title: #2d1236;
+  --star-text: #2d1236;
+  --star-button: #9a3412;
+  --star-button-text: #ffffff;
+  --star-button-border: #fff8f1;
+  --star-button-hover: #6b2a86;
+  --star-focus: #4a1d5c;
+  --pulse: rgba(234, 88, 12, 0.4);
+
+  /* Stack */
+  --badge-bg: #fffaf5;
+  --badge-text: #2d1236;
+  --badge-border: #e9c8b0;
+  --badge-check: #8a6674;
+  --badge-checked-bg: #e8fdf6;
+  --badge-checked-text: #2d1236;
+  --badge-checked-check: #059669;
+
+  /* Selector de modos */
+  --switcher-active: #9a3412;
+}
+
+
+
+/*
+3. MODO NOCHE-----------------------------------------------------------------------------------------------------------
+   
+
+ body[data-tema="noche"] {
+
+  
+  --bg-animated: url();
+  --bg-fallback: #0f172a;
+
+  --text-base: var(--color-slate-100);
+  --selection: var(--color-blue-deep);
+  --glow: rgba(56, 189, 248, 0.3);
+  --glow-strong: rgba(56, 189, 248, 0.45);
+
+   Portada: libro 
+  --book-bg: #172036;
+  --book-border: rgba(71, 85, 105, 0.9);
+  --book-back: #1e293b;
+  --spine-bg: linear-gradient(90deg, #0b1220 0%, #334155 45%, #1e293b 90%, #0f172a 100%);
+  --spine-border: #334155;
+  --spine-text: var(--color-slate-300);
+  --spine-dot: var(--color-blue-bright);
+  --page-edges-bg: repeating-linear-gradient(90deg, #334155 0px, #1e293b 1.5px, #0f172a 3px);
+  --page-edges-border: #0f172a;
+  --wave-1: #5b6fb5;
+  --wave-2: #3f57a8;
+  --wave-3: #2a3d82;
+  --wave-4: #1b2a5e;
+
+   Portada: textos y adornos 
+  --tag-bg: #1e3a5f;
+  --tag-text: var(--color-blue-soft);
+  --tag-border: #2b5c8a;
+  --tag-alt-bg: rgba(15, 23, 42, 0.9);
+  --tag-alt-text: var(--color-slate-200);
+  --tag-alt-border: var(--color-slate-600);
+  --title: var(--color-blue-tint);
+  --title-accent: var(--color-blue-sky);
+  --divider: var(--color-blue-bright);
+  --author: var(--color-slate-100);
+  --subtitle: var(--color-blue-sky);
+  --description: var(--color-slate-300);
+  --bubble-bg: var(--color-slate-900);
+  --bubble-border: rgba(56, 189, 248, 0.4);
+  --bubble-code: var(--color-blue-sky);
+  --disc-bg: var(--color-blue-deep);
+  --disc-hover: var(--color-blue-bright);
+  --action-text: var(--color-slate-100);
+  --action-hover: var(--color-blue-sky);
+  --action-sub: var(--color-slate-400);
+  --pill-bg: var(--color-slate-900);
+  --pill-text: var(--color-blue-soft);
+  --pill-border: var(--color-slate-700);
+
+   Libro abierto 
+  --page-bg: var(--color-slate-800);
+  --page-border: var(--color-slate-700);
+  --header-bg: rgba(15, 23, 42, 0.85);
+  --header-border: var(--color-slate-700);
+  --separator: var(--color-slate-600);
+  --folio-title: var(--color-blue-sky);
+  --button-bg: #1e3a5f;
+  --button-text: var(--color-blue-soft);
+  --button-border: #2b5c8a;
+  --button-hover-bg: #274b7a;
+  --button-active-bg: #2b5c8a;
+  --scroll-track: var(--color-slate-900);
+  --scroll-thumb: var(--color-slate-600);
+  --scroll-thumb-hover: var(--color-blue-bright);
+
+   Páginas 
+  --panel-subtitle: var(--color-blue-bright);
+  --panel-title: var(--color-slate-100);
+  --panel-ornament: var(--color-slate-500);
+  --panel-filetag: var(--color-slate-400);
+
+   Índice 
+  --toc-hover-bg: #24324a;
+  --toc-hover-border: #2b5c8a;
+  --toc-number: #ffffff;
+  --toc-title: var(--color-slate-100);
+  --toc-summary: var(--color-slate-400);
+  --toc-page: #7b8aa3;
+  --toc-cloud: var(--color-blue-deep);
+
+  Puntos 
+  --dot-bg: var(--color-slate-600);
+  --dot-active: var(--color-blue-bright);
+
+   Sobre mí 
+  --heading: var(--color-slate-100);
+  --paragraph: var(--color-slate-300);
+  --check-icon: var(--color-emerald);
+  --check-icon-fill: var(--color-slate-800);
+  --quote-bg: #2a2540;
+  --quote-text: var(--color-slate-300);
+  --quote-author: var(--color-slate-400);
+  --quote-cursor: var(--color-slate-100);
+
+   Desafíos 
+  --cloud-bg: #24324a;
+  --cloud-border: #3f5f8a;
+  --star-letter: var(--color-blue-sky);
+  --star-title: var(--color-slate-100);
+  --star-text: var(--color-slate-200);
+  --star-button: var(--color-blue-deep);
+  --star-button-text: #ffffff;
+  --star-button-border: var(--color-slate-800);
+  --star-button-hover: var(--color-blue-navy);
+  --star-focus: var(--color-blue-sky);
+  --pulse: rgba(56, 189, 248, 0.45);
+
+   Stack 
+  --badge-bg: #172036;
+  --badge-text: var(--color-slate-100);
+  --badge-border: var(--color-slate-600);
+  --badge-check: var(--color-slate-500);
+  --badge-checked-bg: #0b3b2e;
+  --badge-checked-text: #ecfdf5;
+  --badge-checked-check: var(--color-emerald);
+
+  Selector de modos 
+  --switcher-active: var(--color-blue-deep);
+} */
