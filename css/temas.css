@@ -30,7 +30,7 @@
 
 
   /* FONDO DE LA PÁGINA */
-  --bg-animated: url("../img/nubes_animadas_10s.gif");
+  --bg-animated: url("../img/cielo_azul_nubes.gif");
   --bg-fallback: #bae6fd;  
 
   /* GENERALES  */
@@ -56,12 +56,12 @@
   --page-edges-border: #cbd5e1;
 
   /* Ondas  */
-  --wave-1: #bae6fd;
+  --wave-1: #C1E3F5;
   --wave-2: #61C4FA;
   --wave-3: #0686CB;
   --wave-4: #05699E;
 
- 
+ /* Portada: textos y adornos */
   --tag-bg: var(--color-blue-tint);
   --tag-text: var(--color-blue-navy);
   --tag-border: var(--color-blue-soft);
@@ -161,6 +161,13 @@
   --badge-checked-text: var(--color-slate-950);
   --badge-checked-check: var(--color-emerald);
 
+   /* habilidades blandas */
+   --skill-one: #007DA3;
+   --skill-two: #00A0D1;
+   --skill-three: #00C3FF;
+   --skill-four: #2ECEFF;
+   --skill-five: #5CD9FF;
+
   /* BOTONES PARA CAMBIAR DE MODO  */
   --switcher-active: var(--color-blue-navy);
 }
@@ -171,101 +178,144 @@
   */
 body[data-tema="atardecer"] {
 
-  
-  --bg-animated: url();
+  /*  COLORES */
+  --color-or-white: #fff8f1;
+  --color-or-paper: #fffaf5;
+  --color-or-slate-50: #F5ECF9;
+  --color-or-slate-100: #E4C9ED;
+  --color-or-slate-200: #D3A7E2;
+  --color-or-slate-300: #D6B3C2;
+  --color-or-slate-400: #C695AA;
+  --color-or-slate-500: #B67792;
+  --color-or-slate-600: #6b3a4f;
+  --color-or-slate-700: #4C2938;
+  --color-or-slate-800: #491D58;
+  --color-or-slate-900: #2D1236;
+  --color-or-slate-950: #100613;
+
+  --color-orange-tint: #FFEAD1;
+  --color-orange-soft: #F7E4C0;
+  --color-orange-sky: #F2D297;
+  --color-orange-bright: #F57A38;
+  --color-orange-primary: #ea580c;
+  --color-orange-deep: #c2410c;
+  --color-orange-navy: #9a3412;
+  --color-orange-midnight: #69230C;
+  --color-blue: #1D5FD7;
+  --color-blue-soft: #E9EFFC;
+  --color-blue-oscuro: #143F90;
+
+
+   /* FONDO DE LA PÁGINA */
+  --bg-animated: url("../img/atardecer_nubes.gif");
   --bg-fallback: #3b2a4a;
 
-  --text-base: #ffe8d6;
-  --selection: #ea580c;
+    /* GENERALES  */
+  --text-base: var(--color-or-slate-100);
+  --selection: var(--color-orange-primary);
   --glow: rgba(249, 115, 22, 0.25);
   --glow-strong: rgba(249, 115, 22, 0.38);
 
-  /* Portada: libro */
-  --book-bg: #ffd9b8;
+  /* PORTADA: LIBRO  */
+  --book-bg: var(--color-orange-soft);
   --book-border: rgba(255, 237, 213, 0.95);
-  --book-back: #fff8f1;
+  --book-back:var(--color-or-paper);
+
+   /* Lomo */
   --spine-bg: linear-gradient(90deg, #e8c5a8 0%, #fff4ea 45%, #e0b895 90%, #b98563 100%);
   --spine-border: #e0b895;
-  --spine-text: #6b3a4f;
-  --spine-dot: #ea580c;
+  --spine-text: var(--color-or-slate-600);
+  --spine-dot: var(--color-orange-primary);
+
+  
+  /* Borde de las páginas */
   --page-edges-bg: repeating-linear-gradient(90deg, #fff7ed 0px, #fed7aa 1.5px, #fdba74 3px);
   --page-edges-border: #fdba74;
+
+    /* Ondas  */
   --wave-1: #fed7aa;
   --wave-2: #fb9a5b;
   --wave-3: #d9467a;
   --wave-4: #6b2a86;
 
   /* Portada: textos y adornos */
-  --tag-bg: #fff1e6;
-  --tag-text: #9a3412;
-  --tag-border: #fdba74;
+  --tag-bg: var(--color-orange-tint);
+  --tag-text: var(--color-orange-navy);
+  --tag-border: var(--color-orange-soft);
   --tag-alt-bg: rgba(255, 255, 255, 0.95);
-  --tag-alt-text: #3b0764;
-  --tag-alt-border: #e9c8b0;
-  --title: #4a1d5c;
-  --title-accent: #c2410c;
-  --divider: #ea580c;
-  --author: #2d1236;
-  --subtitle: #86198f;
-  --description: #5b3a4a;
-  --bubble-bg: #fff1e6;
+  --tag-alt-text: var(--color-or-slate-800);
+  --tag-alt-border: var(--color-or-slate-300);
+
+  --title: var(--color-orange-midnight);
+  --title-accent: var(--color-orange-deep);
+  --divider: var(--color-orange-primary);
+  --author: var(--color-or-slate-900);
+  --subtitle: var(--color-orange-navy);
+  --description: var(--color-or-slate-600);
+
+  --bubble-bg: var(--color-orange-tint);
   --bubble-border: rgba(194, 65, 12, 0.4);
-  --bubble-code: #9a3412;
-  --disc-bg: #ea580c;
-  --disc-hover: #9a3412;
-  --action-text: #2d1236;
-  --action-hover: #9a3412;
-  --action-sub: #7c5a62;
-  --pill-bg: #fff1e6;
-  --pill-text: #4a1d5c;
-  --pill-border: #fdba74;
+  --bubble-code: var(--color-orange-deep);
 
-  /* Libro abierto */
-  --page-bg: #fff8f1;
-  --page-border: #f1d3b8;
+  --disc-bg: var(--color-orange-sky);
+  --disc-hover: var(--color-orange-navy);
+  --action-text: var(--color-or-slate-900);
+  --action-hover:var(--color-orange-navy);
+  --action-sub: var(--color-or-slate-500);
+  --pill-bg: var(--color-orange-tint);
+  --pill-text: var(--color-orange-midnight);
+  --pill-border: var(--color-or-slate-300);
+
+  /* LIBRO ABIERTO: HOJA, CABECERA Y BOTONES  */
+  --page-bg: var(--color-or-white) ;
+  --page-border: var(--color-or-slate-200);
   --header-bg: rgba(255, 248, 241, 0.85);
-  --header-border: #f1d3b8;
-  --separator: #e9c8b0;
-  --folio-title: #c2410c;
-  --button-bg: #fff1e6;
-  --button-text: #9a3412;
-  --button-border: #fdba74;
-  --button-hover-bg: #ffe4cc;
-  --button-active-bg: #fed7aa;
-  --scroll-track: #fdeee0;
-  --scroll-thumb: #e9c8b0;
-  --scroll-thumb-hover: #ea580c;
+  --header-border: var(--color-orange-sky);
+  --separator: var(--color-orange-sky);
+  --folio-title: var(--color-orange-primary);
+   /* Botones del libro cerrar, anterior, siguiente y contador de páginas */
+  --button-bg: var(--color-orange-tint);
+  --button-text: var(--color-orange-navy);
+  --button-border: var(--color-orange-soft);
+  --button-hover-bg: var(--color-orange-tint);
+  --button-active-bg: var(--color-orange-soft);
 
-  /* Páginas */
-  --panel-subtitle: #c2410c;
-  --panel-title: #2d1236;
-  --panel-ornament: #8a6674;
-  --panel-filetag: #8a6674;
+  /* Barra de desplazamiento */
+  --scroll-track: var(--color-or-slate-50);
+  --scroll-thumb: var(--color-or-slate-100);
+  --scroll-thumb-hover: var(--color-orange-primary);
 
-  /* Índice */
-  --toc-hover-bg: #fff1e6;
-  --toc-hover-border: #fdba74;
-  --toc-number: #ffffff;
-  --toc-title: #2d1236;
-  --toc-summary: #7c5a62;
-  --toc-page: #8a6674;
-  --toc-cloud: #ea580c;
+  /* PÁGINAS: ENCABEZADOS  */
+  --panel-subtitle: var(--color-orange-primary);
+  --panel-title: var(--color-or-slate-950);
+  --panel-ornament: var(--color-or-slate-400);
+  --panel-filetag: var(--color-or-slate-400);
 
-  /* Puntos */
-  --dot-bg: #e9c8b0;
-  --dot-active: #ea580c;
+  /*  ÍNDICE  */
+  --toc-hover-bg: var(--color-orange-tint);
+  --toc-hover-border: var(--color-orange-soft);
+  --toc-number: var(--color-or-white);
+  --toc-title: var(--color-or-slate-900);
+  --toc-summary: var(--color-or-slate-600);
+  --toc-page: var(--color-or-slate-400);
+  --toc-cloud: var(--color-orange-primary);
 
-  /* Sobre mí */
-  --heading: #2d1236;
-  --paragraph: #4b2e3a;
-  --check-icon: #059669;
-  --check-icon-fill: #fff8f1;
-  --quote-bg: #fde2e4;
-  --quote-text: #6b4a58;
-  --quote-author: #7c5a62;
-  --quote-cursor: #2d1236;
+  /* PUNTOS DE NAVEGACIÓN */
+  --dot-bg: var(--color-or-slate-100);
+  --dot-active: var(--color-orange-primary);
 
-  /* Desafíos */
+  /*  SOBRE MÍ */
+  --heading: var(--color-or-slate-900);
+  --paragraph: var(--color-or-slate-700);
+  --check-icon: var(--color-blue);
+  --check-icon-fill: var(--color-or-white) ;
+  /* frase que se escribe sola */
+  --quote-bg: #EFE9F4;
+  --quote-text: var(--color-or-slate-600);
+  --quote-author: var(--color-or-slate-700);
+  --quote-cursor: var(--color-or-slate-950);
+
+   /* DESAFÍOS TARJETAS SCRUM */
   --cloud-bg: #fff1e6;
   --cloud-border: #fdba74;
   --star-letter: #c2410c;
@@ -278,17 +328,24 @@ body[data-tema="atardecer"] {
   --star-focus: #4a1d5c;
   --pulse: rgba(234, 88, 12, 0.4);
 
-  /* Stack */
-  --badge-bg: #fffaf5;
-  --badge-text: #2d1236;
-  --badge-border: #e9c8b0;
-  --badge-check: #8a6674;
-  --badge-checked-bg: #e8fdf6;
-  --badge-checked-text: #2d1236;
-  --badge-checked-check: #059669;
+  /* STACK DE HERRAMIENTAS  */
+  --badge-bg: var(--color-or-paper);
+  --badge-text: var(--color-or-slate-900);
+  --badge-border:var(--color-or-slate-300) ;
+  --badge-check: var(--color-or-slate-400);
+  --badge-checked-bg:var(--color-blue-soft) ;
+  --badge-checked-text: var(--color-or-slate-950);
+  --badge-checked-check: var(--color-blue-oscuro) ;
+  
+  /* habilidades blandas */
+   --skill-one: #C26C0F;
+   --skill-two: #ED8312;
+   --skill-three: #F09A3E;
+   --skill-four:#F4B067 ;
+   --skill-five: #F7C692;
 
-  /* Selector de modos */
-  --switcher-active: #9a3412;
+  /* BOTONES PARA CAMBIAR DE MODO  */
+  --switcher-active: var(--color-orange-navy);
 }
 
 

@@ -2,9 +2,9 @@
 const themes = ["manana", "atardecer", "noche"];
 
 const themeNames = {
-  manana: "☀️ Mañana",
-  atardecer: "🌇 Atardecer",
-  noche: "🌙 Noche"
+  manana: "⛅",
+  atardecer: "🌞",
+  noche: "🌒"
 };
 
 // Nombre con el que se guarda la elección en el navegador

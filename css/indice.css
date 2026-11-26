@@ -1,8 +1,4 @@
-/* =====================================================
-   INDICE.CSS
-   Página 1: tabla de contenidos.
-   (Los colores salen de temas.css con var(--...))
-   ===================================================== */
+
 
 /* enlaces capitulos */
 .toc-item-btn {
@@ -56,7 +52,7 @@
   width: 100%;
   height: 100%;
   color: var(--toc-cloud);   /* la línea de la nube (stroke=currentColor) */
-  fill: var(--toc-cloud);    /* el relleno: antes estaba en el HTML, el CSS tiene prioridad */
+  fill: var(--toc-cloud);    
   stroke-width: 1.5; /* grosor de la linea de un icono SVG */
 }
 
@@ -88,7 +84,7 @@
   font-weight: 400;
 }
 
-/* Párrafo de introducción del índice (antes tenía style="..." dentro del HTML) */
+/* Párrafo de introducción del índice*/
 .panel-intro {
   font-size: 0.85rem;
   color: var(--description);

@@ -63,3 +63,88 @@
   color: var(--color-white);
   transform: scale(1.05);
 }
+
+/* habilidades blandas */
+.skill-box {
+  height: 200px;
+  width: 550px;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0 10px 20px var(--color-slate-200);
+  font-family: var(--font-sans);
+}
+
+.palette {
+  display: flex;
+  height: 86%;
+  width: 100%;
+}
+
+.skill {
+  height: 100%;
+  min-width: 0;
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: flex-grow 0.25s ease;
+}
+
+.skill span {
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.skill:nth-child(1) {
+  background: var(--skill-one);
+}
+
+.skill:nth-child(2) {
+  background: var(--skill-two);
+}
+
+.skill:nth-child(3) {
+  background:var(--skill-three);
+}
+
+.skill:nth-child(4) {
+  background: var(--skill-four);
+}
+
+.skill:nth-child(5) {
+  background: var( --skill-five);
+}
+
+.skill:hover {
+  flex-grow: 2;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.skill:hover span {
+  opacity: 1;
+}
+
+ #stats  {
+  height: 14%;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5em;
+  box-sizing: border-box;
+  color: var(--color-slate-400);
+ 
+}
+
+/* #stats span {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color:var(--color-slate-700) ;
+  transform: scale(1.2);
+
+} */
